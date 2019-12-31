@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width user-scalable=yes">
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width user-scalable=yes"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MetComplex</title>
     <link rel="stylesheet" href="styles/libs.min.css" />
@@ -13,7 +16,38 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="menu-open">
+    <div class="menu-tablet">
+      <div class="menu-tablet-content">
+        <div class="menu-tablet-header">
+          <a class="logo" href="/">
+            <img src="images/logo-white.svg" alt="logo" />
+          </a>
+          <button class="menu-tablet-close"></button>
+        </div>
+        <nav class="nav">
+          <a class="nav__link" href="#">Контакты</a>
+          <a class="nav__link" href="#">Сплавы</a>
+          <a class="nav__link" href="#">Цены на сплавы</a>
+          <a class="nav__link" href="#">Закупочные цены на лома и материалы</a>
+          <a class="nav__link" href="#">Купим</a>
+          <a class="nav__link" href="#">Расписание работы</a>
+        </nav>
+      </div>
+      <div class="menu-tablet-footer">
+        <div class="column">
+          <a href="tel:8 (383) 204-90-54" class="phone">8 (383) 204-90-54</a>
+        
+          <div class="copyright">
+            © 2019 , "Metcomplex" LTD
+          </div>
+        </div>
+        <div class="column">
+          <a href="mailto: mail@mtcomplex.ru" class="email">mail@mtcomplex.ru</a>
+        </div>
+      </div>
+    </div>
+
     <header class="header">
       <div class="container header__container">
         <div class="header__logoBlock">
@@ -36,6 +70,7 @@
             <a class="nav__link" href="#">Расписание работы</a>
           </nav>
         </div>
+        <button class="burger"></button>
       </div>
     </header>
     <section class="section-first">
@@ -48,6 +83,11 @@
           src="images/Metcomplex-text.svg"
           alt="Metcomplex"
           class="metcom-img"
+        />
+        <img
+          src="images/Metcomplex-text-tablet.svg"
+          alt="Metcomplex"
+          class="metcom-img-tablet"
         />
       </div>
       <div class="zindex-text">
@@ -835,7 +875,7 @@
             ИНН/КПП: 54013101129 / 540201001, <br />
             ОГРН 1085401010012, ОКПО 86811162, ОКВЭД 51.57
             <br />
-            <br>
+            <br />
             © 2019 , "Metcomplex" LTD
           </p>
         </div>
