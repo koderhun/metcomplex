@@ -202,6 +202,13 @@ img {
   background-size: 100%;
 }
 
+.advantage-column.col2 {
+  height: 23rem;
+  margin-top: 0;
+  background: url("../images/boxing2.png") no-repeat center;
+  background-size: 100%;
+}
+
 .advantage-column.col4 {
   margin-top: 18rem;
 }
@@ -902,10 +909,12 @@ body.menu-open .menu-tablet {
   .gramota-list {
     position: absolute;
     right: 1.7rem;
+    top: 17rem;
+    margin-right: 8%;
   }
 
   .section-first {
-    margin-bottom: 20rem;
+    margin-bottom: 0;
   }
 
   .advantage {
@@ -913,15 +922,25 @@ body.menu-open .menu-tablet {
   }
 
   .advantage-column {
-    flex-basis: 20rem;
+    flex-basis: calc(33.33% - 2rem);
   }
 
   .advantage-column.col2 {
-    display: none;
+    /* display: none; */
   }
 
   .polyhed {
-    right: 2.8rem;
+    right: -2rem;
+    left: auto;
+  }
+
+  .section2 {
+    margin-top: -15rem;
+  }
+
+  .section2 .polyhed {
+    right: 4rem;
+    bottom: -6.5rem;
   }
 
   .advantage-column.col1 {
@@ -929,7 +948,7 @@ body.menu-open .menu-tablet {
   }
   .advantage-column.col5 {
     order: 0;
-    position: static;
+    top: 38.5rem;
   }
 
   .advantage-column.col3 {
@@ -938,5 +957,12 @@ body.menu-open .menu-tablet {
 
   .advantage-column.col4 {
     order: 2;
+    margin-left: calc(33.33% + 1rem);
+    margin-top: 4rem;
+  }
+
+  .first-work {
+    top: 8.5rem;
+    right: 21%;
   }
 }
