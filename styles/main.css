@@ -344,11 +344,11 @@ img {
   border-bottom: 2px solid #000;
 }
 
-.periodic-tablet-container {
+.periodic-table-container {
   display: flex;
 }
 
-.periodic-tablet-col {
+.periodic-table-col {
   flex-basis: 8rem;
   border: 2px solid #000;
   margin-top: -2px;
@@ -358,34 +358,34 @@ img {
   cursor: pointer;
 }
 
-.periodic-tablet-col:hover,
-.periodic-tablet-col:focus {
+.periodic-table-col:hover,
+.periodic-table-col:focus {
   border-color: #ff2b00;
 }
 
-.periodic-tablet-col:hover + .periodic-tablet-col,
-.periodic-tablet-col:focus + .periodic-tablet-col {
+.periodic-table-col:hover + .periodic-table-col,
+.periodic-table-col:focus + .periodic-table-col {
   border-left-color: transparent;
 }
 
-.periodic-tablet-col:hover .periodic-tablet-title,
-.periodic-tablet-col:focus .periodic-tablet-title {
+.periodic-table-col:hover .periodic-table-title,
+.periodic-table-col:focus .periodic-table-title {
   background: #ff2b00;
   border-bottom-color: #ff2b00;
   color: #fff;
 }
 
-.periodic-tablet-col:last-child {
+.periodic-table-col:last-child {
   border-right-color: #000;
 }
 
-.periodic-tablet-col:last-child:hover,
-.periodic-tablet-col:last-child:focus {
+.periodic-table-col:last-child:hover,
+.periodic-table-col:last-child:focus {
   border-color: #ff2b00;
 }
 
-.periodic-tablet-title,
-.periodic-tablet-text {
+.periodic-table-title,
+.periodic-table-text {
   height: 4rem;
   display: flex;
   align-items: center;
@@ -395,12 +395,12 @@ img {
   line-height: 145%;
 }
 
-.periodic-tablet-title {
+.periodic-table-title {
   border-bottom: 2px solid #000;
   font-weight: bold;
 }
 
-.periodic-tablet-text {
+.periodic-table-text {
 }
 
 .periodic-one {
@@ -783,7 +783,7 @@ body.menu-open .menu-tablet {
 
 @media (max-width: 1060px) {
   .container {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 
   .header__logo {
@@ -964,5 +964,45 @@ body.menu-open .menu-tablet {
   .first-work {
     top: 8.5rem;
     right: 21%;
+  }
+
+  .advantage-production .advantage-column:nth-child(3) {
+    order: 3;
+    margin-top: -4rem;
+  }
+
+  .periodic-table {
+    border: 0;
+    padding-top: 2px;
+  }
+
+  .periodic-table-container {
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .periodic-table-col {
+    flex-basis: calc(100% / 7);
+    margin-bottom: 2rem;
+    position: relative;
+    margin-top: 0;
+    border-right-color: #000;
+  }
+
+  .periodic-table-col::before,
+  .periodic-table-col::after {
+    content: "";
+    border-top: 2px solid #000;
+    width: 1000rem;
+    position: absolute;
+    left: -1000rem;
+  }
+
+  .periodic-table-col::before {
+    top: -2px;
+  }
+
+  .periodic-table-col::after {
+    bottom: -2px;
   }
 }
