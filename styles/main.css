@@ -662,14 +662,12 @@ img {
 }
 
 .footer-header {
-  margin-top: 4rem;
   text-transform: uppercase;
   font-size: 2.4rem;
 }
 
 .logo-white {
   display: inline-block;
-  margin-bottom: 2rem;
 }
 
 .footer a {
@@ -722,6 +720,31 @@ body.menu-open .menu-tablet {
 
 .metcom-img-tablet {
   display: none;
+}
+
+.footer .columns-item .subhead {
+  min-height: 8rem;
+  display: flex;
+  margin: 0;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.footer .address {
+  min-height: 7rem;
+  margin-bottom: 3rem;
+}
+
+.footer .phone,
+.footer .email {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer .phone:hover,
+.footer .email:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 140rem) {
@@ -1066,5 +1089,26 @@ body.menu-open .menu-tablet {
     left: -1000rem;
     width: 1000rem;
     border-top: 2px solid #000;
+  }
+
+  .footer .columns-footer {
+    flex-wrap: wrap;
+  }
+
+  .footer .columns-footer > .columns-item {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .columns-item-second {
+    margin-top: 8rem;
+  }
+
+  .footer .address {
+    margin-bottom: 1rem;
+  }
+
+  .footer .columns-item .footer-header {
+    margin-top: 4rem;
   }
 }
