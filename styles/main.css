@@ -459,6 +459,10 @@ img {
   margin-bottom: 0;
 }
 
+.columns-text {
+  min-height: 9rem;
+}
+
 .section5 {
   margin-bottom: 11.5rem;
 }
@@ -468,7 +472,7 @@ img {
 }
 
 .section7 .section-header {
-  margin-bottom: 4.9rem;
+  margin-bottom: 4rem;
 }
 
 .section7 {
@@ -491,67 +495,67 @@ img {
   line-height: 145%;
 }
 
-.costumtablet-left-border .costumtablet-head,
-.costumtablet-left-border .costumtablet-line:last-child,
-.costumtablet-right-border .costumtablet-head,
-.costumtablet-right-border .costumtablet-line:last-child {
+.costumtable-left-border .costumtable-head,
+.costumtable-left-border .costumtable-line:last-child,
+.costumtable-right-border .costumtable-head,
+.costumtable-right-border .costumtable-line:last-child {
   position: relative;
 }
 
-.costumtablet-left-border .costumtablet-head:after,
-.costumtablet-left-border .costumtablet-line:last-child:before,
-.costumtablet-right-border .costumtablet-head:after,
-.costumtablet-right-border .costumtablet-line:last-child:before {
+.costumtable-left-border .costumtable-head:after,
+.costumtable-left-border .costumtable-line:last-child:before,
+.costumtable-right-border .costumtable-head:after,
+.costumtable-right-border .costumtable-line:last-child:before {
   content: "";
   display: block;
   position: absolute;
   bottom: -2px;
   left: -1000rem;
-  width: 100rem;
+  width: 1000rem;
   border-top: 2px solid #000;
 }
 
-.costumtablet-right-border .costumtablet-head:after,
-.costumtablet-right-border .costumtablet-line:last-child:before {
+.costumtable-right-border .costumtable-head:after,
+.costumtable-right-border .costumtable-line:last-child:before {
   left: auto;
   right: -1000rem;
 }
 
-.costumtablet-line {
+.costumtable-line {
   display: flex;
   align-items: center;
   border-top: 2px solid #000;
   cursor: pointer;
 }
 
-.costumtablet-line:hover,
-.costumtablet-line:hover .costumtablet-item,
-.costumtablet-line:hover + .costumtablet-line {
+.costumtable-line:hover,
+.costumtable-line:hover .costumtable-item,
+.costumtable-line:hover + .costumtable-line {
   border-color: #ff2b00;
   border-bottom-color: #000;
 }
 
-.costumtablet-line:hover .costumtablet-item:first-child {
+.costumtable-line:hover .costumtable-item:first-child {
   background: #ff2b00;
   color: #fff;
 }
 
-.costumtablet-line:last-child {
+.costumtable-line:last-child {
   border-bottom: 2px solid #000;
 }
 
-.costumtablet-line:hover:last-child {
+.costumtable-line:hover:last-child {
   border-color: #ff2b00;
 }
 
-.costumtablet-item {
+.costumtable-item {
   flex-basis: calc(50% / 3);
   padding: 0.5rem 1rem;
   border-left: 2px solid #000;
   text-align: right;
 }
 
-.costumtablet-item:first-child {
+.costumtable-item:first-child {
   flex-basis: 50%;
   max-width: 50%;
   overflow: hidden;
@@ -561,18 +565,18 @@ img {
   text-overflow: ellipsis;
 }
 
-.costumtablet-item:last-child {
+.costumtable-item:last-child {
   border-right: 2px solid #000;
 }
 
-.costumtablet-head {
+.costumtable-head {
   color: #000;
   font-size: 1rem;
   font-weight: bold;
   border-color: transparent;
 }
 
-.costumtablet-head .costumtablet-item {
+.costumtable-head .costumtable-item {
   border-color: transparent;
   padding: 0;
   text-align: left;
@@ -1004,5 +1008,63 @@ body.menu-open .menu-tablet {
 
   .periodic-table-col::after {
     bottom: -2px;
+  }
+
+  .columns-table-full {
+    flex-wrap: wrap;
+  }
+
+  .columns-table-full > .columns-item {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .columns-table-full > .columns-item:last-child {
+    margin-right: 0;
+  }
+
+  .section6 {
+    margin-bottom: 10rem;
+  }
+
+  .section8 {
+    margin-bottom: 8rem;
+  }
+
+  .columns-text {
+    min-height: 0rem;
+  }
+
+  .columns-table-tree .columns-item {
+    flex-basis: calc(33.33% - 1.5rem);
+    margin-bottom: 0;
+  }
+
+  .columns-table-tree .columns-item:last-child {
+    margin-right: 0;
+  }
+
+  .costumtable-left-border .costumtable-line:last-child:after,
+  .costumtable-left-border .costumtable-head:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: initial;
+    right: -1000rem;
+    width: 1000rem;
+    border-top: 2px solid #000;
+  }
+
+  .costumtable-right-border .costumtable-head:before,
+  .costumtable-right-border .costumtable-line:last-child:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    right: initial;
+    left: -1000rem;
+    width: 1000rem;
+    border-top: 2px solid #000;
   }
 }
