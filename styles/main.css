@@ -31,7 +31,7 @@ img {
 }
 
 .header {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .header__logo {
@@ -306,6 +306,10 @@ img {
   height: 16rem;
   font-size: 1.4rem;
   line-height: 145%;
+}
+
+.sequence-col-last {
+  display: none;
 }
 
 .sequence-col:first-child {
@@ -718,6 +722,7 @@ body.menu-open .menu-tablet {
   display: flex;
 }
 
+.metcom-img-phone,
 .metcom-img-tablet {
   display: none;
 }
@@ -728,6 +733,7 @@ body.menu-open .menu-tablet {
   margin: 0;
   align-items: flex-end;
   margin-bottom: 3rem;
+  max-width: 13rem;
 }
 
 .footer .address {
@@ -1110,5 +1116,227 @@ body.menu-open .menu-tablet {
 
   .footer .columns-item .footer-header {
     margin-top: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .metcom-img-tablet,
+  .metcom-img {
+    display: none;
+  }
+
+  .metcom-img-phone {
+    display: block;
+  } */
+
+  .first-work {
+    top: 6.5rem;
+  }
+
+  .section-first__head {
+    margin-top: 23rem;
+    margin-left: -2rem;
+    width: inherit;
+    max-width: inherit;
+    margin-right: -2rem;
+    padding: 2rem 2rem;
+  }
+
+  .advantage {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .advantage .advantage-column {
+    position: static;
+    flex-basis: 100%;
+    width: 100%;
+    min-height: 23rem;
+    order: 1;
+    margin: 0 0 2rem 0;
+  }
+
+  .advantage .advantage-column.col1 {
+    position: relative;
+    margin-bottom: 8rem;
+  }
+
+  .advantage .advantage-column.col0,
+  .advantage .advantage-column.col1,
+  .advantage .advantage-column.col2,
+  .advantage .advantage-column.col5 {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    flex-basis: inherit;
+    width: inherit;
+  }
+
+  .advantage .advantage-column.col2 {
+    margin-bottom: 4rem;
+  }
+
+  .advantage .advantage-column.col3,
+  .advantage .advantage-column.col4 {
+    min-height: inherit;
+    margin-bottom: 4rem;
+  }
+
+  .section2 .polyhed {
+    right: inherit;
+    left: 1rem;
+  }
+
+  .advantage-production .advantage-column {
+    min-height: inherit;
+    height: inherit;
+  }
+
+  .advantage-production .advantage-column:nth-child(3) {
+    margin-top: 0;
+    order: 1;
+    margin-bottom: 8rem;
+  }
+
+  .section4 {
+    margin-top: 3rem;
+    margin-bottom: 22rem;
+  }
+
+  .sequence {
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: -2px;
+  }
+  .sequence-col {
+    position: static;
+    margin: 0 -1px;
+    flex-basis: 50%;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+  }
+
+  .sequence-col-last {
+    display: block;
+  }
+
+  .periodic-table-col {
+    flex-basis: 50%;
+  }
+
+  .periodic-one {
+    margin: 2rem 0;
+  }
+
+  .section5 .columns {
+    flex-wrap: wrap;
+  }
+
+  .section5 {
+    margin-bottom: 6rem;
+  }
+
+  .section5 .columns > div {
+    flex-basis: inherit;
+  }
+
+  .periodic-multiline {
+    margin-bottom: 2rem;
+  }
+
+  .columns {
+    flex-wrap: inherit;
+    flex-direction: column;
+  }
+
+  .columns-table-tree .columns-item:last-child,
+  .columns-table-tree .columns-item {
+    flex-basis: inherit;
+    margin-right: -2rem;
+    margin-left: -2rem;
+    margin-bottom: 2rem;
+  }
+
+  .columns-item img {
+    width: 100%;
+  }
+
+  .section6 {
+    margin-bottom: 6rem;
+  }
+
+  .section7 {
+    margin-bottom: 8rem;
+  }
+
+  .section8 {
+    margin-bottom: 6rem;
+  }
+
+  .columns-logistic > div {
+    flex-basis: inherit;
+  }
+
+  .columns-table-full .columns > div {
+    margin-right: 0;
+  }
+
+  .costumtable-line {
+    flex-wrap: wrap;
+  }
+
+  .costumtable-item {
+    flex-basis: calc(100% / 3);
+  }
+
+  .costumtable-item:first-child {
+    flex-basis: 100%;
+    max-width: 100%;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+
+  .costumtable-head .costumtable-item:first-child {
+    display: none;
+  }
+
+  .section9 {
+    margin-bottom: 8rem;
+  }
+
+  .section10 {
+    display: none;
+  }
+
+  .map {
+    height: 10rem;
+  }
+
+  .footer .columns-item .subhead.logo-white {
+    margin-bottom: 4rem;
+  }
+
+  .footer .columns-item .subhead {
+    margin-bottom: 1rem;
+    min-height: 0;
+  }
+
+  .columns-item-second {
+    margin-top: 0;
+  }
+
+  .columns-footer .columns-item {
+    margin-bottom: 4rem;
+  }
+
+  .footer .address {
+    margin-bottom: 0;
+  }
+
+  .footer .columns-item .footer-header {
+    margin-top: 0;
+  }
+
+  .footer .columns-footer > .columns-item {
+    margin-bottom: 0;
   }
 }
