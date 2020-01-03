@@ -140,6 +140,9 @@ img {
   line-height: 3.4rem;
   max-width: 57rem;
   margin: 17.9rem 0rem 0 -4.6rem;
+}
+
+.section-first__head div {
   background: rgba(255, 255, 255, 0.6);
   padding: 2.5rem 5rem;
 }
@@ -152,7 +155,7 @@ img {
   font-size: 1rem;
   line-height: 1.2rem;
   font-weight: bold;
-  margin-top: 34.5rem;
+  margin-top: 40rem;
   margin-right: 10rem;
 }
 
@@ -608,7 +611,7 @@ img {
 
 .map {
   transition: all 0.2s ease-in-out;
-  height: 7rem;
+  height: 10rem;
   background: url("../images/map.png") no-repeat center;
   background-size: cover;
 }
@@ -701,9 +704,18 @@ img {
   font-weight: bold;
 }
 
+.gramota-list {
+  margin-right: 6%;
+}
+
+.first-work {
+  top: 4.5rem;
+  right: 28%;
+}
+
 .section2 {
-  padding-top: 8rem;
-  margin-top: -8rem;
+  margin-top: -24rem;
+  padding-top: 28em;
 }
 
 .burger {
@@ -777,27 +789,13 @@ body.menu-open .menu-tablet {
     right: 56.5rem;
   }
 }
-@media (max-width: 140rem) {
+@media (max-width: 14000px) {
   .container {
     max-width: 121rem;
   }
 }
 
-@media (max-width: 120rem) {
-  .gramota-list {
-    margin-right: 6.5%;
-  }
-
-  .first-work {
-    top: 4.5rem;
-    right: 18.5%;
-  }
-
-  .section2 {
-    margin-top: -24rem;
-    padding-top: 21em;
-  }
-
+@media (max-width: 1200px) {
   .advantage-column.col0,
   .advantage-column.col5 {
     margin-top: 0;
@@ -811,6 +809,17 @@ body.menu-open .menu-tablet {
   .advantage-column.col5 {
     top: -10rem;
     right: -15rem;
+  }
+
+  .first-work {
+    right: 25%;
+    margin-right: 0;
+  }
+
+  .gramota-list {
+    margin-right: 0;
+    position: relative;
+    right: 15%;
   }
 }
 
