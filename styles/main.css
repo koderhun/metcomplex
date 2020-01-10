@@ -787,7 +787,6 @@ button.flag-btn {
   display: none;
   background: white;
   padding: 4rem 1rem 0.5rem 1rem;
-  border-radius: 4px;
   z-index: 3;
 }
 
@@ -798,10 +797,6 @@ button.flag-btn {
 
 .flag.open .flag-content {
   display: block;
-}
-
-.flag-content {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .flag-content span {
