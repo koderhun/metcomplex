@@ -306,7 +306,7 @@ img {
   list-style-type: none;
   border-right: 2px solid #000;
   padding: 2rem 1rem;
-  height: 16rem;
+  min-height: 16rem;
   font-size: 1.4rem;
   line-height: 145%;
 }
@@ -327,6 +327,7 @@ img {
   left: 1rem;
   font-size: 1rem;
   line-height: 1.2rem;
+  font-weight: bold;
 }
 
 .periodic-head {
@@ -1194,6 +1195,10 @@ button.flag-btn {
   .footer .columns-item .footer-header {
     margin-top: 4rem;
   }
+
+  .section-first {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1415,5 +1420,11 @@ button.flag-btn {
 
   .footer .columns-footer > .columns-item {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .polyhed {
+    right: 1rem;
   }
 }
