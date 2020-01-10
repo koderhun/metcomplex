@@ -8,4 +8,10 @@ $(function() {
   $body.on("click", ".menu-tablet-close, .burger", function() {
     $body.toggleClass("menu-open");
   });
+
+  $body.on("click", ".flag-btn", function() {
+    $(this)
+      .closest(".flag")
+      .toggleClass("open");
+  });
 });
