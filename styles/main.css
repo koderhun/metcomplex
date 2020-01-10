@@ -391,6 +391,11 @@ img {
   border-color: #ff2b00;
 }
 
+.periodic-table-col:last-child::before,
+.periodic-table-col:last-child::after {
+  left: -1000rem;
+}
+
 .periodic-table-title,
 .periodic-table-text {
   height: 4rem;
@@ -405,9 +410,6 @@ img {
 .periodic-table-title {
   border-bottom: 2px solid #000;
   font-weight: bold;
-}
-
-.periodic-table-text {
 }
 
 .periodic-one {
@@ -1103,7 +1105,7 @@ button.flag-btn {
     border-top: 2px solid #000;
     width: 1000rem;
     position: absolute;
-    left: -1000rem;
+    left: -500rem;
   }
 
   .periodic-table-col::before {

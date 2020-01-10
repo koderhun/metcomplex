@@ -14,4 +14,11 @@ $(function() {
       .closest(".flag")
       .toggleClass("open");
   });
+
+  $(".gallery-item").magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: true
+    }
+  });
 });
