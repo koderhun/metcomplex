@@ -115,7 +115,8 @@ img {
 }
 
 .metcom-img,
-.metcom-img-tablet {
+.metcom-img-tablet,
+.metcom-img-phone {
   position: relative;
   width: 107%;
   max-width: inherit;
@@ -898,7 +899,7 @@ button.flag-btn {
   }
 
   .header__logo {
-    max-width: 13rem;
+    max-width: 18rem;
   }
 
   .header__container {
@@ -936,7 +937,7 @@ button.flag-btn {
   .menu-tablet-footer {
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2rem;
     flex-basis: 30rem;
   }
 
@@ -945,6 +946,7 @@ button.flag-btn {
   }
 
   .menu-tablet .phone {
+    display: block;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -968,7 +970,7 @@ button.flag-btn {
   .menu-tablet-header {
     display: flex;
     justify-content: space-between;
-    padding: 3rem 3rem 0 3rem;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .menu-tablet-close {
@@ -978,11 +980,11 @@ button.flag-btn {
     margin-top: 0.8rem;
     border: 0;
     background: url("../images/close.svg") no-repeat center;
-    background-size: 3rem 3rem;
+    background-size: 2rem 2rem;
   }
 
   .menu-tablet .nav {
-    padding: 3rem;
+    padding: 2rem;
     flex-wrap: wrap;
     max-width: 70%;
   }
@@ -1011,10 +1013,17 @@ button.flag-btn {
   }
 
   .section-first__head {
-    max-width: 100%;
-    width: 100%;
-    margin-left: -5rem;
+    max-width: 200%;
+    width: 200%;
+    margin-left: -2rem;
     margin-top: 27rem;
+    margin-right: -2rem;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .section-first__head div {
+    max-width: 57rem;
+    background: none;
   }
 
   .gramota-list {
@@ -1093,7 +1102,7 @@ button.flag-btn {
   }
 
   .periodic-table-col {
-    flex-basis: calc(100% / 7);
+    flex-basis: calc(100% / 7 - 2px);
     margin-bottom: 2rem;
     position: relative;
     margin-top: 0;
@@ -1197,31 +1206,135 @@ button.flag-btn {
   }
 
   .section-first {
-    overflow: hidden;
+    /* overflow: hidden; */
+  }
+
+  .sequence {
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: -2px;
+  }
+  .sequence-col {
+    position: static;
+    margin: 0 -1px;
+    flex-basis: 50%;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+  }
+
+  .sequence-col-last {
+    display: block;
+  }
+}
+
+@media (max-width: 760px) {
+  .section-first__head {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  .section5 {
+    margin-bottom: 4rem;
+  }
+
+  .section7 {
+    margin-bottom: 10rem;
+  }
+
+  .section-first__head div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .gramota-list {
+    top: 15rem;
+  }
+
+  .advantage-column {
+    flex-basis: calc(50% - 4rem);
+  }
+
+  .advantage-column.col3 {
+    margin-top: 9rem;
+  }
+
+  .advantage-column.col4 {
+    width: 100%;
+    margin-left: 1rem;
+    flex-basis: 100%;
+  }
+
+  .advantage-production .advantage-column:nth-child(3) {
+    margin-top: 4rem;
+  }
+
+  .advantage-column.advantage-column-head,
+  .advantage-production .advantage-column:nth-child(3) {
+    flex-basis: 100%;
+    margin-top: 2rem;
+  }
+
+  .section4 {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .menu-tablet-footer {
+    flex-direction: column;
+    flex-basis: 0;
   }
 }
 
 @media (max-width: 480px) {
-  /* .metcom-img-tablet,
+  .zindex-logo:before {
+    top: -15rem;
+    right: -53rem;
+  }
+
+  .metcom-img-tablet,
   .metcom-img {
     display: none;
   }
 
   .metcom-img-phone {
     display: block;
-  } */
+    width: 109%;
+  }
 
   .first-work {
     top: 6.5rem;
   }
 
   .section-first__head {
-    margin-top: 23rem;
+    margin-top: 52rem;
     margin-left: -2rem;
     width: inherit;
     max-width: inherit;
     margin-right: -2rem;
     padding: 2rem 2rem;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .section-first__head div {
+    padding: 0;
+    background: none;
+  }
+
+  .zindex-text .container {
+    flex-direction: column;
+  }
+
+  .gramota-list {
+    position: static;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 40%;
+    max-width: 60%;
+  }
+
+  .section2 {
+    margin-top: 6rem;
   }
 
   .advantage {
@@ -1282,23 +1395,6 @@ button.flag-btn {
   .section4 {
     margin-top: 3rem;
     margin-bottom: 22rem;
-  }
-
-  .sequence {
-    position: relative;
-    flex-wrap: wrap;
-    margin-bottom: -2px;
-  }
-  .sequence-col {
-    position: static;
-    margin: 0 -1px;
-    flex-basis: 50%;
-    border-bottom: 2px solid #000;
-    border-left: 2px solid #000;
-  }
-
-  .sequence-col-last {
-    display: block;
   }
 
   .periodic-table-col {
