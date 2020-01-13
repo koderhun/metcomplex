@@ -780,17 +780,28 @@ body.menu-open .menu-tablet {
 }
 
 button.flag-btn {
-  width: 24px;
-  height: 16px;
+  position: relative;
+  width: 18px;
+  height: 12px;
+}
+
+.flag-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -14px;
+  width: 6px;
+  height: 4px;
+  background: url("../images/arrow-down.svg") no-repeat center;
 }
 
 .flag-content {
   position: absolute;
   top: -1rem;
-  left: -1.7rem;
+  left: -10px;
   display: none;
   background: white;
-  padding: 4rem 1rem 0.5rem 1rem;
+  padding: 32px 22px 10px 10px;
   z-index: 3;
 }
 
@@ -801,6 +812,11 @@ button.flag-btn {
 
 .flag.open .flag-content {
   display: block;
+  background-color: black;
+}
+
+.flag.open .flag-btn::before {
+  background-image: url("../images/arrow-down-white.svg");
 }
 
 .flag-content span {
@@ -815,10 +831,10 @@ button.flag-btn {
 .flag-ru,
 .flag-fr {
   display: block;
-  width: 4rem;
-  height: 2rem;
+  width: 18px;
+  height: 12px;
   border: 0;
-  background-size: 40px;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -828,7 +844,7 @@ button.flag-btn {
 }
 
 .flag-fr {
-  background-image: url("../images/france.svg");
+  background-image: url("../images/japan.svg");
 }
 
 .flag-ru {
