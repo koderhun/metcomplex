@@ -738,6 +738,11 @@ body.menu-open .menu-tablet {
   display: flex;
 }
 
+.gallery-item {
+  color: black;
+  text-decoration: none;
+}
+
 .metcom-img-phone,
 .metcom-img-tablet {
   display: none;
