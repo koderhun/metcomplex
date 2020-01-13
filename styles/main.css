@@ -32,6 +32,9 @@ img {
 
 .header {
   padding: 2rem 0;
+  background-color: white;
+  z-index: 5;
+  min-width: 100%;
 }
 
 .header__logo {
@@ -62,6 +65,11 @@ img {
   display: flex;
 }
 
+.header__navBlock {
+  position: relative;
+  top: 7px;
+}
+
 .nav__link {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
@@ -74,7 +82,6 @@ img {
   margin-right: 4rem;
   text-align: left;
   max-width: 12rem;
-  margin-top: 0.5rem;
   padding: 0.5rem 0 0 0;
 }
 
@@ -564,6 +571,7 @@ img {
   padding: 0.5rem 1rem;
   border-left: 2px solid #000;
   text-align: right;
+  white-space: nowrap;
 }
 
 .costumtable-item:first-child {
@@ -781,6 +789,7 @@ body.menu-open .menu-tablet {
 
 .flag {
   position: relative;
+  top: -6px;
 }
 
 .flag-btn {
@@ -991,6 +1000,12 @@ button.flag-btn {
     margin-right: 0;
     position: relative;
     right: 15%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .header-fix .header {
+    position: fixed;
   }
 }
 
