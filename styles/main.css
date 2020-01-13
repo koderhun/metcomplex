@@ -32,9 +32,10 @@ img {
 
 .header {
   padding: 2rem 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 5;
   min-width: 100%;
+  transition: all 0.8 ease-in-out;
 }
 
 .header__logo {
@@ -210,14 +211,14 @@ img {
   position: relative;
   height: 23rem;
   background: url("../images/poly1.png") no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .advantage-column.col2 {
   height: 23rem;
   margin-top: 0;
   background: url("../images/boxing2.png") no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .advantage-column.col4 {
@@ -749,7 +750,16 @@ body.menu-open .menu-tablet {
 .gallery-item {
   color: black;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
   cursor: url(../images/cursor.svg), pointer;
+}
+
+.gallery-item.gallery-item-text {
+  box-shadow: none;
+}
+
+.gallery-item:hover {
+  box-shadow: 0px 0px 4px 1px #000;
 }
 
 .gramota-list .gallery-item {

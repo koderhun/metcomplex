@@ -33,7 +33,7 @@ $(function() {
     var fromTop = $(document).scrollTop();
 
     if (docPos > fromTop) {
-      $body.toggleClass("header-fix", fromTop > 200);
+      $body.toggleClass("header-fix", fromTop > 100);
     }
     docPos = fromTop;
   });
