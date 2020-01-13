@@ -18,7 +18,9 @@ $(function() {
   $(".gallery-item").magnificPopup({
     type: "image",
     gallery: {
-      enabled: true
+      enabled: true,
+      tCounter:
+        '<span class="mfp-counter-one">%curr%</span><span class="mfp-counter-separate"></span><span class="mfp-counter-all">%total%</span>'
     }
   });
 });
