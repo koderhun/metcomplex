@@ -1051,6 +1051,27 @@ img.mfp-img {
 .modal-call textarea {
   min-height: 20rem;
 }
+
+.btn-default {
+  display: inline-block;
+  min-height: 46px;
+  border: 0;
+  background-color: white;
+  color: black;
+  font-size: 1.6rem;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-default:hover {
+  opacity: 0.7;
+}
+
+.modal-line:last-child {
+  margin-top: 3rem;
+}
+
 /* end модальник */
 
 @media (min-width: 140rem) {
