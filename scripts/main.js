@@ -37,4 +37,6 @@ $(function() {
     }
     docPos = fromTop;
   });
+
+  $(".open-popup-link").magnificPopup();
 });
