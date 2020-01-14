@@ -1022,6 +1022,8 @@ img.mfp-img {
 @media (min-width: 1400px) {
   .container {
     max-width: 175rem;
+
+    padding: 0 9rem;
   }
 
   .gramota-list {
