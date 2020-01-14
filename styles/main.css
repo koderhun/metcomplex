@@ -224,11 +224,11 @@ img {
 
 .polyhed {
   position: absolute;
-  top: 19rem;
-  right: -9.2rem;
+  top: 20.3rem;
+  right: -6.7rem;
   height: 13.5rem;
   width: 13.5rem;
-  padding: 2.5rem 1rem 1rem 2.5rem;
+  padding: 3rem 1rem 1rem 2.5rem;
   color: #fff;
   background: url("../images/poly.svg") no-repeat center;
   background-size: 100%;
@@ -241,8 +241,10 @@ img {
   width: 21rem;
   height: 21rem;
   bottom: -19rem;
-  left: 0rem;
-  padding: 5rem 3rem 3rem 3rem;
+  right: -1.5rem;
+  top: 14rem;
+  padding: 5.5rem 3rem 4rem 4.5rem;
+  line-height: 1.4;
 }
 
 .advantage-column.col0,
@@ -297,6 +299,7 @@ img {
 }
 
 .sequence {
+  position: relative;
   counter-reset: sequence;
   display: flex;
   margin: 0;
@@ -366,7 +369,6 @@ img {
   margin-bottom: -2px;
   margin-right: -2px;
   border-right-color: transparent;
-  cursor: pointer;
 }
 
 .periodic-table-col:hover,
@@ -538,7 +540,7 @@ img {
   display: flex;
   align-items: center;
   border-top: 2px solid #000;
-  cursor: pointer;
+  cursor: default;
 }
 
 .costumtable-line:hover,
@@ -551,6 +553,24 @@ img {
 .costumtable-line:hover .costumtable-item:first-child {
   background: #ff2b00;
   color: #fff;
+}
+
+.costumtable-head:hover .costumtable-item {
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.costumtable-head:hover .costumtable-item:first-child {
+  background-color: transparent;
+  color: #000;
+}
+.costumtable-head:hover,
+.costumtable-head:hover .costumtable-item {
+  border-top-color: transparent;
+}
+
+.costumtable-head:hover + .costumtable-line {
+  border-top-color: #000;
 }
 
 .costumtable-line:last-child {
@@ -640,6 +660,7 @@ img {
   background: url("../images/poly-red.svg") no-repeat center;
   background-size: 115%;
   cursor: pointer;
+  outline: none;
   padding: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -997,9 +1018,30 @@ img.mfp-img {
     right: 56.5rem;
   }
 }
-@media (max-width: 14000px) {
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 175rem;
+  }
+
+  .gramota-list {
+    margin-right: 21%;
+  }
+}
+
+@media (max-width: 1400px) {
   .container {
     max-width: 121rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sequence-col {
+    flex-basis: calc(100% / 4);
+  }
+
+  .periodic-table-col {
+    flex-basis: calc(100% / 14);
   }
 }
 
@@ -1059,6 +1101,7 @@ img.mfp-img {
     border: 0;
     background: url("../images/burger.svg") no-repeat center;
     background-size: 3rem 3rem;
+    cursor: pointer;
   }
 
   .burger:hover {
@@ -1125,6 +1168,7 @@ img.mfp-img {
     border: 0;
     background: url("../images/close.svg") no-repeat center;
     background-size: 2rem 2rem;
+    cursor: pointer;
   }
 
   .menu-tablet .nav {
@@ -1141,6 +1185,11 @@ img.mfp-img {
     min-height: 3rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .menu-tablet .nav__link:hover {
+    border-color: transparent;
+    opacity: 0.8;
   }
 
   .header__navBlock {
@@ -1359,7 +1408,6 @@ img.mfp-img {
     margin-bottom: -2px;
   }
   .sequence-col {
-    position: static;
     margin: 0 -1px;
     flex-basis: 50%;
     border-bottom: 2px solid #000;
@@ -1368,6 +1416,12 @@ img.mfp-img {
 
   .sequence-col-last {
     display: block;
+  }
+
+  .polyhed-sequence {
+    right: -1rem;
+    bottom: -18rem;
+    top: auto;
   }
 }
 
@@ -1701,5 +1755,12 @@ img.mfp-img {
 @media (max-width: 768px) {
   .polyhed {
     right: 1rem;
+  }
+
+  .polyhed-sequence {
+    right: -1rem;
+  }
+
+  .costumtable2 .costumtable-item {
   }
 }
