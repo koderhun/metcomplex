@@ -742,7 +742,7 @@ img {
 }
 
 .section2 {
-  margin-top: -24rem;
+  margin-top: -38rem;
   padding-top: 28em;
 }
 
@@ -1108,6 +1108,30 @@ img.mfp-img {
 
   .gramota-list {
     margin-right: 21%;
+  }
+
+  .header__logo,
+  .nav__link {
+    margin-right: 7rem;
+  }
+
+  .header__logoBlock {
+    margin-right: 8rem;
+  }
+
+  .section-first__head {
+    margin-top: 24rem;
+  }
+
+  .advantage-column.col0,
+  .advantage-column.col5 {
+    position: static;
+    margin-top: -6rem;
+  }
+
+  .section2 {
+    margin-top: -8rem;
+    padding-top: 10rem;
   }
 }
 
