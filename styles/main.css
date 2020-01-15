@@ -828,10 +828,26 @@ body.menu-open .menu-tablet {
   cursor: pointer;
 }
 
-button.flag-btn {
+.flag-btn {
   position: relative;
-  width: 18px;
-  height: 12px;
+  padding: 10px;
+  border: 0;
+  background: none;
+  right: 0;
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.flag-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 6px;
+  height: 4px;
+  background: url("../images/arrow-down.svg") no-repeat center;
 }
 
 .flag-btn::before {
@@ -876,9 +892,9 @@ button.flag-btn {
   margin-bottom: 1rem;
 }
 
-.flag-en,
-.flag-ru,
-.flag-fr {
+.flag-en::after,
+.flag-ru::after,
+.flag-fr::after {
   display: block;
   width: 18px;
   height: 12px;
@@ -888,15 +904,15 @@ button.flag-btn {
   background-position: center;
 }
 
-.flag-en {
+.flag-en::after {
   background-image: url("../images/usa.svg");
 }
 
-.flag-fr {
+.flag-fr::after {
   background-image: url("../images/japan.svg");
 }
 
-.flag-ru {
+.flag-ru::after {
   background-image: url("../images/rus.svg");
 }
 
