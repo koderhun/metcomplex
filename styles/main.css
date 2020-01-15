@@ -6,6 +6,7 @@
 
 html {
   font-size: 10px;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -31,11 +32,30 @@ img {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 2rem 0;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 5;
   min-width: 100%;
   transition: all 0.8 ease-in-out;
+}
+
+.header-hide .header {
+  opacity: 0;
+  height: 0;
+  transition: all 0.7s ease;
+}
+
+.header-hide.header-fix .header {
+  height: auto;
+  opacity: 1;
+}
+
+.header-shadow {
+  height: 10.5rem;
 }
 
 .header__logo {
@@ -86,6 +106,7 @@ img {
   padding: 0.5rem 0 0 0;
 }
 
+.nav__link.active,
 .nav__link:hover,
 .nav__link:focus {
   border-top: 1px solid #ff2b00;
@@ -95,6 +116,24 @@ img {
 .section-first {
   position: relative;
   min-height: 60rem;
+}
+
+.section5 {
+  position: relative;
+}
+
+.section5 #splav {
+  position: absolute;
+  top: -150px;
+}
+
+.section10 {
+  position: relative;
+}
+
+.section10 #payment {
+  position: absolute;
+  top: -150px;
 }
 
 .zindex-logo {
@@ -166,6 +205,11 @@ img {
   font-weight: bold;
   margin-top: 40rem;
   margin-right: 10rem;
+}
+
+.gramota-list a:hover {
+  color: red;
+  transition: all 0.3s;
 }
 
 .gramota-list li {

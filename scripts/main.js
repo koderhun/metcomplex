@@ -33,10 +33,63 @@ $(function() {
     var fromTop = $(document).scrollTop();
 
     if (docPos > fromTop) {
-      $body.toggleClass("header-fix", fromTop > 100);
+      $body.toggleClass("header-fix", fromTop > 20);
+    }
+
+    if (fromTop > 105) {
+      $body.addClass("header-hide");
+    } else {
+      $body.removeClass("header-hide");
     }
     docPos = fromTop;
   });
 
   $(".open-popup-link").magnificPopup();
+
+  // scroll section
+  $(".nav__link").bind("click", function(e) {
+    e.preventDefault(); // prevent hard jump, the default behavior
+
+    var target = $(this).attr("href"); // Set the target as variable
+
+    // perform animated scrolling by getting top-position of target-element and set it as scroll target
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(target).offset().top
+        },
+        400,
+        function() {
+          location.hash = target; //attach the hash (#jumptarget) to the pageurl
+        }
+      );
+
+    return false;
+  });
+
+  $(window)
+    .scroll(function() {
+      var scrollDistance = $(window).scrollTop();
+
+      // Show/hide menu on scroll
+      //if (scrollDistance >= 850) {
+      //		$('nav').fadeIn("fast");
+      //} else {
+      //		$('nav').fadeOut("fast");
+      //}
+
+      // Assign active class to nav links while scolling
+      $("section").each(function(i) {
+        if ($(this).position().top <= scrollDistance) {
+          $(".nav__link.active").removeClass("active");
+          $(".nav__link")
+            .eq(i)
+            .addClass("active");
+        }
+      });
+    })
+    .scroll();
+
+  // end section
 });
