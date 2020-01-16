@@ -118,6 +118,7 @@ img {
 .section-first {
   position: relative;
   min-height: 60rem;
+  pointer-events: none;
 }
 
 /* .section5 {
@@ -787,6 +788,7 @@ img {
 
 .gramota-list {
   margin-right: 6%;
+  pointer-events: auto;
 }
 
 .first-work {
@@ -832,7 +834,7 @@ body.menu-open .menu-tablet {
 
 .gallery-item img:hover {
   transition: none;
-  box-shadow: 0px 0px 4px 1px red;
+  box-shadow: 0px 0px 0px 4px #ff2b00;
 }
 
 .gramota-list .gallery-item {
