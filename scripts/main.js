@@ -12,6 +12,10 @@ $(function() {
     $body.toggleClass("menu-open");
   });
 
+  // $body.on("click", ".menu-tablet .nav__link", function() {
+  //   $body.removeClass("menu-open");
+  // });
+
   $body.on("click", ".flag-btn", function() {
     $(this)
       .closest(".flag")
@@ -34,6 +38,8 @@ $(function() {
 
     if (docPos > fromTop) {
       $body.toggleClass("header-fix", fromTop > 20);
+    } else {
+      $body.removeClass("header-fix");
     }
 
     if (fromTop > 105) {
@@ -64,7 +70,7 @@ $(function() {
           location.hash = target; //attach the hash (#jumptarget) to the pageurl
         }
       );
-
+    $body.removeClass("menu-open");
     return false;
   });
 

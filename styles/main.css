@@ -1223,6 +1223,10 @@ img.mfp-img {
 }
 
 @media (max-width: 1200px) {
+  .nav__link {
+    margin-right: 3rem;
+  }
+
   .advantage-column.col0,
   .advantage-column.col5 {
     margin-top: 0;
@@ -1352,6 +1356,7 @@ img.mfp-img {
     padding: 2rem;
     flex-wrap: wrap;
     max-width: 70%;
+    margin-top: 8rem;
   }
 
   .menu-tablet .nav__link {
@@ -1364,9 +1369,12 @@ img.mfp-img {
     margin-bottom: 2rem;
   }
 
-  .menu-tablet .nav__link:hover {
+  .menu-tablet .nav__link.active,
+  .menu-tablet .nav__link:hover,
+  .menu-tablet .nav__link:focus {
     border-color: transparent;
     opacity: 0.8;
+    color: red;
   }
 
   .header__navBlock {
