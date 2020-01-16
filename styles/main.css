@@ -878,8 +878,8 @@ body.menu-open .menu-tablet {
   border: 0;
   background: none;
   right: 0;
-  width: 4rem;
-  height: 2rem;
+  width: 6rem;
+  height: 4rem;
   display: flex;
   align-items: center;
 }
@@ -888,7 +888,7 @@ body.menu-open .menu-tablet {
   content: "";
   display: block;
   position: absolute;
-  right: 0;
+  right: 25px;
   width: 6px;
   height: 4px;
   background: url("../images/arrow-down.svg") no-repeat center;
@@ -898,25 +898,25 @@ body.menu-open .menu-tablet {
   content: "";
   display: block;
   position: absolute;
-  right: -14px;
+  right: 0px;
   width: 6px;
   height: 4px;
-  background: url("../images/arrow-down.svg") no-repeat center;
 }
 
 .flag-content {
   position: absolute;
-  top: -1rem;
-  left: -10px;
+  top: -0.2rem;
+  left: 5px;
   display: none;
   background: white;
-  padding: 32px 22px 10px 10px;
+  padding: 39px 0px 5px 0px;
   z-index: 3;
 }
 
 .flag-line {
   display: block;
   cursor: pointer;
+  padding: 0 40px 0 11px;
 }
 
 .flag.open .flag-content {
@@ -930,6 +930,7 @@ body.menu-open .menu-tablet {
 
 .flag-content span {
   visibility: hidden;
+  display: none;
 }
 
 .flag-line {
@@ -940,6 +941,7 @@ body.menu-open .menu-tablet {
 .flag-ru::after,
 .flag-fr::after {
   display: block;
+  content: "";
   width: 18px;
   height: 12px;
   border: 0;
@@ -1610,7 +1612,7 @@ img.mfp-img {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 775px) {
   .section-first__head {
     margin-left: -2rem;
     margin-right: -2rem;
@@ -1634,31 +1636,70 @@ img.mfp-img {
   }
 
   .advantage-column {
-    flex-basis: calc(50% - 4rem);
+    flex-basis: calc(33.33% - 2rem);
   }
 
   .advantage-column.col3 {
     margin-top: 9rem;
   }
 
-  .advantage-column.col4 {
+  /* .advantage-column.col4 {
     width: 100%;
     margin-left: 1rem;
     flex-basis: 100%;
+  } */
+
+  .advantage-column.col5 {
+    right: -12rem;
   }
 
   .advantage-production .advantage-column:nth-child(3) {
     margin-top: 4rem;
   }
 
-  .advantage-column.advantage-column-head,
-  .advantage-production .advantage-column:nth-child(3) {
-    flex-basis: 100%;
-    margin-top: 2rem;
+  .section-header {
+    margin-bottom: 0.4em;
+  }
+
+  .section2 {
+    padding-top: 34rem;
+    margin-bottom: 8rem;
   }
 
   .section4 {
     margin-top: 4rem;
+  }
+
+  .header {
+    padding-top: 0rem;
+  }
+
+  .header__logoBlock {
+    margin-top: 3.1rem;
+    margin-left: 1.1rem;
+  }
+
+  .header__logo {
+    margin-right: 3.2rem;
+  }
+
+  .burger {
+    position: relative;
+    top: -7px;
+    right: 3px;
+  }
+
+  .zindex-logo {
+    top: 53px;
+  }
+
+  .zindex-logo:before {
+    right: -42rem;
+    top: -17rem;
+  }
+
+  .section-first__head {
+    margin-top: 31rem;
   }
 }
 
