@@ -1159,7 +1159,7 @@ img.mfp-img {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1401px) {
   .container {
     max-width: 175rem;
 
@@ -1201,7 +1201,18 @@ img.mfp-img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .first-work {
+    right: 24%;
+  }
+
+  .gramota-list {
+    margin-right: 9%;
+    margin-top: 34rem;
+  }
+}
+
+@media (min-width: 1201px) {
   .sequence-col {
     flex-basis: calc(100% / 4);
   }
