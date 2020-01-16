@@ -29,7 +29,7 @@
           <a class="nav__link" href="#footer">Контакты</a>
           <a class="nav__link" href="#splav">Сплавы</a>
           <a class="nav__link" href="#splav_price">Цены на&nbsp;сплавы</a>
-          <a class="nav__link" href="#test">Закупочные цены на&nbsp;лома и&nbsp;материалы</a>
+          <a class="nav__link nav__link_modal" href="#modalcall">Заявка</a>
           <a class="nav__link" href="#payment">Купим</a>
           <a class="nav__link" href="#test">Расписание работы</a>
         </nav>
@@ -72,8 +72,8 @@
             <a class="nav__link" href="#footer">Контакты</a>
             <a class="nav__link" href="#splav">Сплавы</a>
             <a class="nav__link" href="#splav_price">Цены на <br> сплавы</a>
-            <a class="nav__link" href="#splav_price">
-              Закупочные <br> цены на лома <br> и материалы
+            <a class="nav__link  nav__link_modal" href="#modalcall">
+              Заявка
             </a>
             <a class="nav__link" href="#payment">Купим</a>
             <a class="nav__link" href="#footer">Расписание <br> работы</a>
@@ -866,7 +866,11 @@
           <span>На карте</span>
         </button>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        <iframe class="map-widget__map" src="https://yandex.ru/map-widget/v1/-/CBeuEDtrtB" frameborder="0"
+        style="height:100%;width: 100%;"
+        ></iframe>
+      </div>
     </section>
     <footer class="footer" id="footer">
       <div class="container">
@@ -977,8 +981,6 @@
         </div>
       </div>
     </footer>
-
-    <a href="#modalcall" class="open-popup-link">Show inline popup</a>
 
     <div style="display: none;">
       <div class="modal-call" id="modalcall">

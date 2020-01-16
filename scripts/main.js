@@ -31,6 +31,14 @@ $(function() {
     }
   });
 
+  $(".nav__link_modal").magnificPopup({
+    callbacks: {
+      open: function() {
+        $body.removeClass("menu-open");
+      }
+    }
+  });
+
   var docPos = $(document).scrollTop();
 
   $(window).on("scroll", function() {
@@ -50,10 +58,8 @@ $(function() {
     docPos = fromTop;
   });
 
-  $(".open-popup-link").magnificPopup();
-
   // scroll section
-  $(".nav__link").bind("click", function(e) {
+  $(".nav__link:not(.nav__link_modal)").bind("click", function(e) {
     e.preventDefault(); // prevent hard jump, the default behavior
 
     var target = $(this).attr("href"); // Set the target as variable
@@ -65,11 +71,14 @@ $(function() {
         {
           scrollTop: $(target).offset().top
         },
-        400,
+        200,
         function() {
           location.hash = target; //attach the hash (#jumptarget) to the pageurl
         }
       );
+    setTimeout(function() {
+      $body.removeClass("header-fix");
+    }, 250);
     $body.removeClass("menu-open");
     return false;
   });
