@@ -1697,6 +1697,28 @@ img.mfp-img {
   }
 }
 
+@media (max-width: 670px) {
+  .sequence {
+    flex-wrap: wrap;
+  }
+
+  .sequence-col {
+    flex-basis: 50%;
+  }
+
+  .sequence-col-last {
+    display: block;
+  }
+
+  .advantage-production .advantage-column:nth-child(3) {
+    margin-top: 1rem;
+  }
+
+  .section-first__head {
+    margin-top: 25rem;
+  }
+}
+
 @media (max-width: 560px) {
   .menu-tablet-footer {
     flex-direction: column;
