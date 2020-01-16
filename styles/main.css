@@ -1591,18 +1591,12 @@ img.mfp-img {
 
   .sequence {
     position: relative;
-    flex-wrap: wrap;
     margin-bottom: -2px;
   }
   .sequence-col {
     margin: 0 -1px;
-    flex-basis: 50%;
     border-bottom: 2px solid #000;
     border-left: 2px solid #000;
-  }
-
-  .sequence-col-last {
-    display: block;
   }
 
   .polyhed-sequence {
@@ -1654,7 +1648,7 @@ img.mfp-img {
   }
 
   .advantage-production .advantage-column:nth-child(3) {
-    margin-top: 4rem;
+    margin-top: -4rem;
   }
 
   .section-header {
@@ -1667,7 +1661,7 @@ img.mfp-img {
   }
 
   .section4 {
-    margin-top: 4rem;
+    margin-top: 5.7rem;
   }
 
   .header {
