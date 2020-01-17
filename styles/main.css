@@ -1100,6 +1100,11 @@ img.mfp-img {
   padding-right: 4.4rem;
 }
 
+.modal-name {
+  /* visibility: hidden; */
+  opacity: 0;
+}
+
 .modal-call input,
 .modal-call textarea {
   display: block;
@@ -1121,6 +1126,22 @@ img.mfp-img {
 
 .modal-call textarea {
   min-height: 20rem;
+}
+
+.error-line {
+  font-size: 0;
+  color: red;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.error-form .error-line {
+  visibility: inherit;
+  opacity: 1;
+  padding: 10px;
+  font-size: 14px;
 }
 
 .btn-default {

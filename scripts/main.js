@@ -127,4 +127,24 @@ $(function() {
     .scroll();
 
   // end section
+
+  // email
+
+  function validate() {
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var address = $(".emailAddress").val();
+    if (reg.test(address) == false) {
+      console.log("Введите корректный e-mail");
+      $(".modal-from").addClass("error-form");
+
+      setTimeout(function() {
+        $(".modal-from").removeClass("error-form");
+      }, 3000);
+      return false;
+    }
+  }
+
+  $(".modal-from").on("submit", function() {
+    return validate();
+  });
 });
