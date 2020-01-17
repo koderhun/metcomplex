@@ -2031,6 +2031,11 @@ img.mfp-img {
     height: 10rem;
   }
 
+  .map iframe {
+    width: 100%;
+    height: 100%;
+  }
+
   .footer .columns-item .subhead.logo-white {
     margin-bottom: 4rem;
   }
