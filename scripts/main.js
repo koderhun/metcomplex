@@ -39,29 +39,27 @@ $(function() {
     }
   });
 
-  // var magnificPopup = $.magnificPopup.instance;
+  var magnificPopup = $.magnificPopup.instance;
 
-  // $(".gallery-item").click(function(e) {
-  //   setTimeout(function() {
-  //     $(".mfp-container").swipe({
-  //       swipeLeft: function(event, direction, distance, duration, fingerCount) {
-  //         console.log("swipe right");
-  //         magnificPopup.next();
-  //       },
+  $(".gallery-item").click(function(e) {
+    setTimeout(function() {
+      $(".mfp-container").swipe({
+        swipeLeft: function(event, direction, distance, duration, fingerCount) {
+          magnificPopup.next();
+        },
 
-  //       swipeRight: function(
-  //         event,
-  //         direction,
-  //         distance,
-  //         duration,
-  //         fingerCount
-  //       ) {
-  //         console.log("swipe left");
-  //         magnificPopup.prev();
-  //       }
-  //     });
-  //   }, 500);
-  // });
+        swipeRight: function(
+          event,
+          direction,
+          distance,
+          duration,
+          fingerCount
+        ) {
+          magnificPopup.prev();
+        }
+      });
+    }, 500);
+  });
 
   var docPos = $(document).scrollTop();
 
