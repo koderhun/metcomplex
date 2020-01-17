@@ -764,7 +764,7 @@ img {
 }
 
 .footer a:hover {
-  color: white;
+  color: #ff2b00;
   opacity: 0.8;
 }
 
@@ -865,16 +865,17 @@ body.menu-open .menu-tablet {
   display: block;
   text-decoration: none;
   margin-bottom: 5px;
+  transition: all 0.3s;
 }
 
 .footer .phone:hover,
 .footer .email:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #ff2b00;
 }
 
 .flag {
   position: relative;
-  top: -6px;
 }
 
 .flag-btn {
@@ -1628,7 +1629,11 @@ img.mfp-img {
 
 @media (max-width: 775px) {
   .flag-btn {
-    top: -18px;
+    top: -26px;
+  }
+
+  .flag-content {
+    top: -2.4rem;
   }
   .section-first__head {
     margin-left: -2rem;
