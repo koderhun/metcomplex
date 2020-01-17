@@ -821,7 +821,7 @@ body.menu-open .menu-tablet {
   color: black;
   text-decoration: none;
   transition: none;
-  cursor: url(../images/cursor.svg), pointer;
+  cursor: url(../images/cursor_plus.svg), pointer;
 }
 
 .gallery-item img {
@@ -919,10 +919,12 @@ body.menu-open .menu-tablet {
   position: absolute;
   top: -0.2rem;
   left: 5px;
-  display: none;
   background: white;
   padding: 39px 0px 5px 0px;
   z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
 }
 
 .flag-line {
@@ -932,8 +934,9 @@ body.menu-open .menu-tablet {
 }
 
 .flag.open .flag-content {
-  display: block;
   background-color: black;
+  visibility: visible;
+  opacity: 1;
 }
 
 .flag.open .flag-btn::before {
@@ -1148,7 +1151,7 @@ img.mfp-img {
 
 /* end модальник */
 
-@media (min-width: 140rem) {
+@media (min-width: 144rem) {
   .advantage-column.col0,
   .advantage-column.col5 {
     position: static;
@@ -1173,7 +1176,7 @@ img.mfp-img {
   }
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 1441px) {
   .container {
     max-width: 175rem;
 
@@ -1209,13 +1212,13 @@ img.mfp-img {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .container {
     max-width: 121rem;
   }
 }
 
-@media (max-width: 1400px) and (min-width: 1200px) {
+@media (max-width: 1440px) and (min-width: 1280px) {
   .first-work {
     right: 24%;
   }
@@ -1226,7 +1229,7 @@ img.mfp-img {
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1281px) {
   .sequence-col {
     flex-basis: calc(100% / 4);
   }
@@ -1236,7 +1239,7 @@ img.mfp-img {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .nav__link {
     margin-right: 3rem;
   }
@@ -1268,13 +1271,13 @@ img.mfp-img {
   }
 }
 
-@media (min-width: 1060px) {
+@media (min-width: 1025px) {
   .header-fix .header {
     position: fixed;
   }
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1024px) {
   .container {
     padding: 0 2rem;
   }
@@ -1314,6 +1317,7 @@ img.mfp-img {
     z-index: 10;
     background-color: #000;
     color: #fff;
+    overflow-y: scroll;
   }
 
   .menu-tablet-footer {
@@ -1348,7 +1352,8 @@ img.mfp-img {
     display: block;
     max-width: 16rem;
     position: relative;
-    top: 1rem;
+    margin-top: 10px;
+    margin-left: 12px;
   }
 
   .menu-tablet-header {
@@ -1362,7 +1367,7 @@ img.mfp-img {
     width: 4rem;
     height: 4rem;
     margin-top: 0.1rem;
-    margin-right: 2rem;
+    margin-right: 0.4rem;
     border: 0;
     background: url("../images/close.svg") no-repeat center;
     background-size: 2rem 2rem;
@@ -1622,6 +1627,9 @@ img.mfp-img {
 }
 
 @media (max-width: 775px) {
+  .flag-btn {
+    top: -18px;
+  }
   .section-first__head {
     margin-left: -2rem;
     margin-right: -2rem;
