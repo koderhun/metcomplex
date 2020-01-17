@@ -82,11 +82,10 @@ $(function() {
 
   // scroll section
   $(".nav__link:not(.nav__link_modal)").bind("click", function(e) {
-    e.preventDefault(); // prevent hard jump, the default behavior
+    e.preventDefault();
 
-    var target = $(this).attr("href"); // Set the target as variable
+    var target = $(this).attr("href");
 
-    // perform animated scrolling by getting top-position of target-element and set it as scroll target
     $("html, body")
       .stop()
       .animate(
@@ -95,7 +94,7 @@ $(function() {
         },
         200,
         function() {
-          location.hash = target; //attach the hash (#jumptarget) to the pageurl
+          location.hash = target;
         }
       );
     setTimeout(function() {
@@ -116,7 +115,6 @@ $(function() {
       //		$('nav').fadeOut("fast");
       //}
 
-      // Assign active class to nav links while scolling
       $("section").each(function(i) {
         if ($(this).position().top <= scrollDistance) {
           $(".nav__link.active").removeClass("active");
