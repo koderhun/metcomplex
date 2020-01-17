@@ -1097,6 +1097,7 @@ img.mfp-img {
   letter-spacing: 0.02em;
   color: white;
   margin-top: 0;
+  padding-right: 4.4rem;
 }
 
 .modal-call input,
@@ -1115,6 +1116,7 @@ img.mfp-img {
   letter-spacing: 0.02em;
   color: #fff;
   width: 100%;
+  border-radius: 0;
 }
 
 .modal-call textarea {
@@ -1987,7 +1989,8 @@ img.mfp-img {
   }
 
   .columns-table-full .columns > div {
-    margin-right: 0;
+    margin-right: -2rem;
+    margin-left: -2rem;
   }
 
   .costumtable-line {

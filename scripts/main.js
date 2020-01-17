@@ -39,6 +39,30 @@ $(function() {
     }
   });
 
+  // var magnificPopup = $.magnificPopup.instance;
+
+  // $(".gallery-item").click(function(e) {
+  //   setTimeout(function() {
+  //     $(".mfp-container").swipe({
+  //       swipeLeft: function(event, direction, distance, duration, fingerCount) {
+  //         console.log("swipe right");
+  //         magnificPopup.next();
+  //       },
+
+  //       swipeRight: function(
+  //         event,
+  //         direction,
+  //         distance,
+  //         duration,
+  //         fingerCount
+  //       ) {
+  //         console.log("swipe left");
+  //         magnificPopup.prev();
+  //       }
+  //     });
+  //   }, 500);
+  // });
+
   var docPos = $(document).scrollTop();
 
   $(window).on("scroll", function() {
