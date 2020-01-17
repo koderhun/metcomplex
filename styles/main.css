@@ -175,14 +175,10 @@ img {
 }
 
 .first-work {
-  position: absolute;
-  display: block;
-  top: 6.5rem;
-  right: 23%;
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.2rem;
-  width: 10rem;
+  width: 17rem;
 }
 
 .section-first__head {
@@ -198,6 +194,12 @@ img {
   padding: 2.5rem 5rem;
 }
 
+.first-info {
+  width: 18rem;
+  padding-top: 4rem;
+  margin-right: 18%;
+}
+
 .gramota-list {
   list-style: none;
   margin: 0;
@@ -206,8 +208,7 @@ img {
   font-size: 1rem;
   line-height: 1.2rem;
   font-weight: bold;
-  margin-top: 40rem;
-  margin-right: 10rem;
+  margin-top: 36rem;
 }
 
 .gramota-list a:hover {
@@ -786,16 +787,6 @@ img {
   font-weight: bold;
 }
 
-.gramota-list {
-  margin-right: 6%;
-  pointer-events: auto;
-}
-
-.first-work {
-  top: 4.5rem;
-  right: 28%;
-}
-
 .section2 {
   margin-top: -38rem;
   padding-top: 28em;
@@ -1152,6 +1143,12 @@ img.mfp-img {
 
 /* end модальник */
 
+@media (min-width: 2000px) {
+  .gramota-list {
+    margin-top: 51rem;
+  }
+}
+
 @media (min-width: 144rem) {
   .advantage-column.col0,
   .advantage-column.col5 {
@@ -1162,19 +1159,6 @@ img.mfp-img {
   .section2 {
     overflow: visible;
   }
-
-  .gramota-list {
-    position: relative;
-    top: 41rem;
-    right: 20.5%;
-    margin-right: 0;
-    margin-top: 0;
-  }
-
-  .first-work {
-    top: 6.5rem;
-    right: 56.5rem;
-  }
 }
 
 @media (min-width: 1441px) {
@@ -1182,10 +1166,6 @@ img.mfp-img {
     max-width: 175rem;
 
     padding: 0 9rem;
-  }
-
-  .gramota-list {
-    margin-right: 21%;
   }
 
   .header__logo,
@@ -1220,14 +1200,6 @@ img.mfp-img {
 }
 
 @media (max-width: 1440px) and (min-width: 1280px) {
-  .first-work {
-    right: 24%;
-  }
-
-  .gramota-list {
-    margin-right: 9%;
-    margin-top: 34rem;
-  }
 }
 
 @media (min-width: 1281px) {
@@ -1259,17 +1231,6 @@ img.mfp-img {
     top: -10rem;
     right: -15rem;
   }
-
-  .first-work {
-    right: 25%;
-    margin-right: 0;
-  }
-
-  .gramota-list {
-    margin-right: 0;
-    position: relative;
-    right: 15%;
-  }
 }
 
 @media (min-width: 1025px) {
@@ -1279,6 +1240,11 @@ img.mfp-img {
 }
 
 @media (max-width: 1024px) {
+  .first-info {
+    margin-top: 11%;
+    margin-right: 6%;
+  }
+
   .container {
     padding: 0 2rem;
   }
@@ -1427,13 +1393,6 @@ img.mfp-img {
     background: none;
   }
 
-  .gramota-list {
-    position: absolute;
-    right: 1.7rem;
-    top: 17rem;
-    margin-right: 8%;
-  }
-
   .section-first {
     margin-bottom: 0;
   }
@@ -1480,11 +1439,6 @@ img.mfp-img {
     order: 2;
     margin-left: calc(33.33% + 1rem);
     margin-top: 4rem;
-  }
-
-  .first-work {
-    top: 8.5rem;
-    right: 21%;
   }
 
   .advantage-production .advantage-column:nth-child(3) {
@@ -1628,6 +1582,10 @@ img.mfp-img {
 }
 
 @media (max-width: 775px) {
+  .first-info {
+    margin-top: 13%;
+  }
+
   .flag-btn {
     top: -26px;
   }
@@ -1651,10 +1609,6 @@ img.mfp-img {
   .section-first__head div {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .gramota-list {
-    top: 15rem;
   }
 
   .advantage-column {
@@ -1791,9 +1745,37 @@ img.mfp-img {
     flex-direction: column;
     flex-basis: 0;
   }
+
+  .first-work {
+    position: absolute;
+    top: -64rem;
+  }
+
+  .gramota-list {
+    margin-top: 0;
+  }
+
+  .first-info {
+    position: absolute;
+    width: 17rem;
+    margin: 0;
+    right: 2rem;
+    bottom: -50%;
+  }
 }
 
 @media (max-width: 490px) {
+  .first-info {
+    width: 50%;
+    margin: 0;
+    right: 2rem;
+    bottom: -29%;
+  }
+
+  .first-work {
+    top: -65rem;
+  }
+
   .section5 {
     padding-top: 1rem;
   }
@@ -1847,10 +1829,6 @@ img.mfp-img {
     width: 109%;
   }
 
-  .first-work {
-    top: 6.5rem;
-  }
-
   .section-first__head {
     margin-top: 52rem;
     margin-left: -2rem;
@@ -1874,8 +1852,7 @@ img.mfp-img {
     position: static;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    margin-left: 40%;
-    max-width: 60%;
+    margin-left: 0;
   }
 
   .section2 {
